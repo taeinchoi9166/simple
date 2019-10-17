@@ -19,6 +19,10 @@ module.exports = {
                     loader: 'babel-loader'
                 }
             },
+            {
+                test:/\.png$/,
+                loader:'file-loader'
+            }
         ]
     },
     plugins: [

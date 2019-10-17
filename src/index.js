@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {DotCanvas} from './components/DotCanvas'
 import './index.scss';
 
-ReactDOM.render(<div>hello</div>, document.getElementById('root'));
+ReactDOM.render(<DotCanvas/>, document.getElementById('root'));

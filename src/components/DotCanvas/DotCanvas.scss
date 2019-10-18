@@ -1,0 +1,15 @@
+
+
+.dot-canvas{
+  width:100vw;
+  max-width:920px;
+  height:auto; // auto로 해주면 width와 길이가 같아짐
+  max-height: 920px;
+
+  background-image:url("../../transparent-bg.png");
+
+  canvas {
+    width: 100%;
+    height: 100%;
+  }
+}

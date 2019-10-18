@@ -1,1 +1,1 @@
-export {default as DotCanvas} from './DotCanvas';
+export {default as DotCanvas} from './DotCanvas.js';

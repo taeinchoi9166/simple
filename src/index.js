@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {DotCanvas} from './components/DotCanvas'
+import MainContainer from './container/MainContainer';
 import './index.scss';
 
-ReactDOM.render(<DotCanvas/>, document.getElementById('root'));
+ReactDOM.render(<MainContainer/>, document.getElementById('root'));

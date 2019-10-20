@@ -1,9 +1,10 @@
 import React from 'react';
+import './ColorView.scss';
 
 function ColorView({color}){
     return (
-        <div style={{border:'3px solid #333',borderRadius:20}}>
-            <div style={{width:30,height:30,background:color}}></div>
+        <div className="color-view">
+            <div className="color-box" style={{background:color}}></div>
         </div>
     );
 }

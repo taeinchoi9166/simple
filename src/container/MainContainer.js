@@ -2,7 +2,7 @@ import React, {Component, createRef} from 'react';
 import {DotCanvas} from '../components/DotCanvas';
 import {ColorView} from "../components/ColorView";
 import {ColorPicker} from "../components/ColorPicker";
-import img from '../test.png';
+import img from '../test3.png';
 
 class MainContainer extends Component{
     constructor(props){
@@ -15,8 +15,9 @@ class MainContainer extends Component{
         color: '#ffffff',
         pImage: [],
         isImageLoaded: false,
-        imageSize: 90,
-        colorPoint: {}
+        imageSize: 500,
+        colorPoint: {},
+        colorList: []
     }
 
     componentDidMount() {
@@ -31,6 +32,7 @@ class MainContainer extends Component{
 
         that.image.onload = function(){
             let _colorPoint = {};
+            let _colorList = [];
             const ctx = that.canvasRef.current.getContext('2d');
             ctx.drawImage(that.image, 0, 0, that.state.imageSize, that.state.imageSize);
 
@@ -41,7 +43,7 @@ class MainContainer extends Component{
                     const idx = i * 4;
 
                     let code = '';
-                    if(data.data[idx + 3] > 30) {
+                    if(data.data[idx + 3] > 40) {
                         data.data[idx + 3] = 255;
                         code = '#' + ('0' + (data.data[idx]).toString(16)).slice(-2) + ('0' + (data.data[idx + 1]).toString(16)).slice(-2) + ('0' + (data.data[idx + 2]).toString(16)).slice(-2);
 
@@ -50,18 +52,29 @@ class MainContainer extends Component{
                     }
 
                     if(code && data.data[idx + 3] > 0){
-                        const pl = _colorPoint[code];
-                        if(!pl) _colorPoint[code] = [];
-                        _colorPoint[code].push({x: Math.floor(i / that.state.imageSize), y: i % that.state.imageSize});
+                        const [x, y] = [Math.floor(i / that.state.imageSize), i % that.state.imageSize];
+                        const pos =  x + ',' + y;
+                        _colorPoint[pos] = code;
+
+                        const isExistColor = _colorList.findIndex(item => item === code);
+
+                        if(isExistColor === -1) {
+                            _colorList.push(code);
+                        }
+                        // const pl = _colorPoint[code];
+                        // if(!pl) _colorPoint[code] = [];
+                        // _colorPoint[code].push({x: Math.floor(i / that.state.imageSize), y: i % that.state.imageSize});
                     }
                 }
 
                 ctx.clearRect(0, 0, that.canvasRef.current.width, that.canvasRef.current.height);
                 ctx.putImageData(data, 0,0);
+
                 that.setState({
                     ...that.state,
                     isImageLoaded: true,
-                    colorPoint:_colorPoint
+                    colorPoint:_colorPoint,
+                    colorList:_colorList
                 });
             }
         }
@@ -82,8 +95,8 @@ class MainContainer extends Component{
             <div>
                 <button onClick={this.onclick}>ll</button>
                 <ColorView color={this.state.color}/>
-                <DotCanvas canvasRef={this.canvasRef} imageSize={this.state.imageSize}/>
-                <ColorPicker colors={Object.keys(this.state.colorPoint)} onChangeColor={this.changeColor}/>
+                <DotCanvas canvasRef={this.canvasRef} imageSize={Math.floor(this.state.imageSize)} colorPoint={this.state.colorPoint}/>
+                <ColorPicker colors={this.state.colorList} onChangeColor={this.changeColor}/>
             </div>
         )
     }

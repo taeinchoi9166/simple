@@ -5,7 +5,7 @@
   max-width:920px;
   height:auto; // auto로 해주면 width와 길이가 같아짐
   max-height: 920px;
-
+  position: relative;
   background-image:url("../../transparent-bg.png");
 
   canvas {

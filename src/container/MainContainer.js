@@ -1,8 +1,9 @@
 import React, {Component, createRef} from 'react';
+import Pixelate from 'pixelate';
 import {DotCanvas} from '../components/DotCanvas';
 import {ColorView} from "../components/ColorView";
 import {ColorPicker} from "../components/ColorPicker";
-import img from '../test3.png';
+import img from '../asset/image/pokemon/dialga.png';
 
 class MainContainer extends Component{
     constructor(props){
@@ -15,29 +16,34 @@ class MainContainer extends Component{
         color: '#ffffff',
         pImage: [],
         isImageLoaded: false,
-        imageSize: 500,
+        imageWidth: 40,
+        imageHeight: 30,
         colorPoint: {},
         colorList: []
     }
 
     componentDidMount() {
+
     }
 
     onclick(){
         if(this.state.isImageLoaded) return false;
+
+
+        this.image = document.createElement('img');
+        this.image.src = img.toString();
+
         const that = this;
 
-        that.image = document.createElement('img');
-        that.image.src = img.toString();
-
         that.image.onload = function(){
+           // const pixelate = new Pixelate(that.image, {amount: 1});
             let _colorPoint = {};
             let _colorList = [];
             const ctx = that.canvasRef.current.getContext('2d');
-            ctx.drawImage(that.image, 0, 0, that.state.imageSize, that.state.imageSize);
+            ctx.drawImage(that.image, 0, 0, that.state.imageWidth, that.state.imageHeight);
 
             if(that.state.pImage.length == 0){
-                const data = ctx.getImageData(0,0, that.canvasRef.current.width, that.canvasRef.current.height);
+                const data = ctx.getImageData(0,0, that.state.imageWidth, that.state.imageHeight);
 
                 for(let i = 0; i < data.data.length / 4; i++){
                     const idx = i * 4;
@@ -52,7 +58,7 @@ class MainContainer extends Component{
                     }
 
                     if(code && data.data[idx + 3] > 0){
-                        const [x, y] = [Math.floor(i / that.state.imageSize), i % that.state.imageSize];
+                        const [x, y] = [Math.floor(i / that.state.imageWidth), i % that.state.imageWidth];
                         const pos =  x + ',' + y;
                         _colorPoint[pos] = code;
 
@@ -68,7 +74,7 @@ class MainContainer extends Component{
                 }
 
                 ctx.clearRect(0, 0, that.canvasRef.current.width, that.canvasRef.current.height);
-                ctx.putImageData(data, 0,0);
+                //ctx.putImageData(data, 0,0);
 
                 that.setState({
                     ...that.state,
@@ -95,7 +101,7 @@ class MainContainer extends Component{
             <div>
                 <button onClick={this.onclick}>ll</button>
                 <ColorView color={this.state.color}/>
-                <DotCanvas canvasRef={this.canvasRef} imageSize={Math.floor(this.state.imageSize)} colorPoint={this.state.colorPoint}/>
+                <DotCanvas canvasRef={this.canvasRef} imageSize={Math.floor(this.state.imageWidth)} colorPoint={this.state.colorPoint}/>
                 <ColorPicker colors={this.state.colorList} onChangeColor={this.changeColor}/>
             </div>
         )

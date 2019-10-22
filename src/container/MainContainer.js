@@ -9,6 +9,7 @@ class MainContainer extends Component{
     constructor(props){
         super(props);
         this.canvasRef = createRef();
+        this.backCanvasRef = createRef();
         this.onclick = this.onclick.bind(this);
     }
 
@@ -36,7 +37,6 @@ class MainContainer extends Component{
         const that = this;
 
         that.image.onload = function(){
-           // const pixelate = new Pixelate(that.image, {amount: 1});
             let _colorPoint = {};
             let _colorList = [];
             const ctx = that.canvasRef.current.getContext('2d');
@@ -101,7 +101,7 @@ class MainContainer extends Component{
             <div>
                 <button onClick={this.onclick}>ll</button>
                 <ColorView color={this.state.color}/>
-                <DotCanvas canvasRef={this.canvasRef} imageSize={Math.floor(this.state.imageWidth)} colorPoint={this.state.colorPoint}/>
+                <DotCanvas canvasRef={this.canvasRef} backCanvasRef={this.backCanvasRef} imageSize={Math.floor(this.state.imageWidth)} colorPoint={this.state.colorPoint} color={this.state.color}/>
                 <ColorPicker colors={this.state.colorList} onChangeColor={this.changeColor}/>
             </div>
         )

@@ -1,4 +1,5 @@
 import React from 'react';
+import './ColorPicker.scss';
 
 function ColorPicker({colors, onChangeColor}){
     return (
@@ -6,8 +7,10 @@ function ColorPicker({colors, onChangeColor}){
           {
               colors.map(color => {
                       return (
-                          <div style={{background: color, width: '20px', height: '20px', float: 'left'}}
-                               onClick={onChangeColor} data-color={color}/>
+                          <div
+                              className="color-item"
+                              style={{background: color}}
+                               onClick={onChangeColor}/>
                       );
                   }
               )

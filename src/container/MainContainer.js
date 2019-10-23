@@ -1,9 +1,9 @@
 import React, {Component, createRef} from 'react';
-import Pixelate from 'pixelate';
+import {DrawerMenu} from "../components/common/DrawerMenu";
 import {DotCanvas} from '../components/DotCanvas';
 import {ColorView} from "../components/ColorView";
 import {ColorPicker} from "../components/ColorPicker";
-import img from '../asset/image/pokemon/dialga.png';
+import img from '../asset/image/pokemon/xerneas.png';
 
 class MainContainer extends Component{
     constructor(props){
@@ -96,13 +96,18 @@ class MainContainer extends Component{
         });
     }
 
+
+
     render() {
         return (
             <div>
                 <button onClick={this.onclick}>ll</button>
-                <ColorView color={this.state.color}/>
                 <DotCanvas canvasRef={this.canvasRef} backCanvasRef={this.backCanvasRef} imageSize={Math.floor(this.state.imageWidth)} colorPoint={this.state.colorPoint} color={this.state.color}/>
-                <ColorPicker colors={this.state.colorList} onChangeColor={this.changeColor}/>
+                <div className={"bmenu"}>
+                    <ColorView color={this.state.color}/>
+                    <ColorPicker colors={this.state.colorList} onChangeColor={this.changeColor}/>
+                </div>
+                <DrawerMenu isDrawerShown={this.props.isDrawerShown} onToggleDrawerMenu={this.props.onToggleDrawerMenu}/>
             </div>
         )
     }

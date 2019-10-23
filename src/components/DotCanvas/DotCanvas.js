@@ -38,7 +38,7 @@ function DotCanvas({canvasRef, backCanvasRef, imageSize, colorPoint, color}){
         // }
         for(const point in curPoint){
             const pos = point.split(',');
-            ctx.fillStyle = commonUtil.convertHexToRgb(colorPoint[point]);
+            ctx.fillStyle = colorPoint[point];
             // console.log('rgba(' + commonUtil.convertHexToRgb(colorPoint[point], true) + ', 1)')
             // console.log(parseInt(pos[0]) * dotSize, parseInt(pos[1]) * dotSize, dotSize, dotSize, colorPoint[point]);
             ctx.fillRect(parseInt(pos[1]) * dotSize, parseInt(pos[0]) * dotSize, dotSize, dotSize);

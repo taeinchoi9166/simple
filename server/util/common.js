@@ -18,3 +18,5 @@ exports.pokemonTypes = {
         dark: '악',
         fairy: '페어리'
 };
+
+exports.baseURL = 'http://localhost:12000';

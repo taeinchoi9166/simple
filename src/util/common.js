@@ -1,3 +1,5 @@
+import {useRef, useEffect} from 'react';
+
 export default {
     convertRgbToHex: rgb => {
         const startIdx = rgb.lastIndexOf('(');
@@ -20,6 +22,15 @@ export default {
         str = (parseInt('0x' + str.substring(0,2))).toString(10) + ',' + (parseInt('0x' + str.substring(2,4))).toString(10) + ',' + (parseInt('0x' + str.substring(4,6))).toString(10);
 
         return isOnlyNums ? str : 'rbg(' + str + ')';
+    },
+    usePrevious: value => {
+        const ref = useRef();
+        useEffect(() => {
+            ref.current = value;
+        }, value);
+
+        return ref.current;
+
     }
 
 }

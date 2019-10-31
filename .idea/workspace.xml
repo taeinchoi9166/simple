@@ -2,26 +2,1211 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c695269-96ba-4a72-ac10-3fe9f124bbf0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DrawerMenu/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Header/Header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/common/Header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/resources/pokemon-en.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/resources/pokemon-ko.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PokemonInfo/PokemonInfo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/SelectPokemon/SelectPokemon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Modal/Modal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/Modal/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/QueryError/QueryError.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/QueryError/QueryError.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/contexts/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/saga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/util/modalString.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/graphql/schemas/pokemonSchema.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/graphql/schemas/pokemonSchema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/util/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/util/common.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/abomasnow-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/abomasnow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/abra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/absol-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/absol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/accelgor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aegislash-blade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aegislash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aerodactyl-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aerodactyl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aggron-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aggron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aipom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/alakazam-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/alakazam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/alomomola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/altaria-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/altaria.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/amaura.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ambipom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/amoonguss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ampharos-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ampharos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/anorith.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/araquanid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arbok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arcanine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-bug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-dragon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-electric.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-fairy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-fighting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-flying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-ghost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-ice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-poison.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-psychic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-steel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus-water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/arceus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/archen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/archeops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ariados.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/armaldo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aromatisse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/articuno.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/audino-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/audino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/aurorus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/avalugg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/axew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/azelf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/azumarill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/azurill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bagon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/baltoy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/banette-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/banette.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/barbaracle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/barboach.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/basculin-blue-striped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/basculin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bastiodon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bayleef.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/beartic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/beautifly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/beedrill-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/beedrill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/beheeyem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/beldum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bellossom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bellsprout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bergmite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bewear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bibarel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bidoof.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/binacle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bisharp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blacephalon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blastoise-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blastoise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blaziken-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blaziken.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blissey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/blitzle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/boldore.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bonsly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bouffalant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bounsweet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/braixen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/braviary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/breloom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/brionne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bronzong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bronzor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bruxish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/budew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/buizel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bulbasaur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/buneary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/bunnelby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/burmy-sandy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/burmy-trash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/burmy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/butterfree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/buzzwole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cacnea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cacturne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/camerupt-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/camerupt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/carbink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/carnivine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/carracosta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/carvanha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cascoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/castform-rainy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/castform-snowy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/castform-sunny.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/castform-sunny.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/castform.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/caterpie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/celebi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/celesteela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chandelure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chansey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/charizard-mega-x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/charizard-mega-y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/charizard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/charjabug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/charmander.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/charmeleon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chatot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cherrim-sunshine.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/cherrim-sunshine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cherrim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cherubi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chesnaught.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chespin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chikorita.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chimchar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chimecho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chinchou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/chingling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cinccino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/clamperl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/clauncher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/clawitzer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/claydol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/clefable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/clefairy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cleffa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cloyster.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cobalion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cofagrigus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/combee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/combusken.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/comfey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/conkeldurr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/corphish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/corsola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cosmoem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cosmog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cottonee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/crabominable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/crabrawler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cradily.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cranidos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/crawdaunt.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/crawdaunt.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cresselia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/croagunk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/crobat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/croconaw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/crustle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cryogonal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cubchoo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cubone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cutiefly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/cyndaquil.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/darkrai.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/darmanitan-zen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/darmanitan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dartrix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/darumaka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/decidueye.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dedenne.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deerling-autumn.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/deerling-autumn.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deerling-summer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deerling-winter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deerling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/delcatty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/delibird.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/delphox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deoxys-attack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deoxys-defense.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deoxys-speed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/deoxys.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dewgong.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dewott.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dewpider.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dhelmise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dialga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/diancie-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/diancie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/diggersby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/diglett-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/diglett.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ditto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dodrio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/doduo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/donphan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/doublade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dragalge.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/dragalge.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dragonair.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dragonite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/drampa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/drapion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dratini.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/drifblim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/drifloon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/drilbur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/drowzee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/druddigon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ducklett.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dugtrio-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dugtrio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dunsparce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/duosion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/durant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dusclops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dusknoir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/duskull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dustox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/dwebble.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/eelektrik.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/eelektross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/eevee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ekans.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/electabuzz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/electivire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/electrike.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/electrode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/elekid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/elgyem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/emboar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/emolga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/empoleon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/entei.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/escavalier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/espeon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/espurr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/excadrill.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/excadrill.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/exeggcute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/exeggutor-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/exeggutor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/exploud.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/farfetchd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/fearow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/feebas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/frillish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/hippopotas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/hippowdon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/jellicent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/meowstic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/pyroar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/female/unfezant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/fennekin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/feraligatr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ferroseed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ferrothorn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/finneon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flaaffy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flabebe-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flabebe-orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flabebe-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flabebe-yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flabebe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flareon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/fletchinder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/fletchling.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floatzel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floette-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floette-eternal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floette-orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floette-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floette-yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/floette.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/florges-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/florges-orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/florges-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/florges-yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/florges.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/flygon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/fomantis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/foongus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/forretress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/fraxure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/frillish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/froakie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/frogadier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/froslass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-dandy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-debutante.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-diamond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-kabuki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-la-reine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-matron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-pharaoh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furfrou.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/furret.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gabite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gallade-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gallade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/galvantula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/garbodor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/garchomp-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/garchomp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gardevoir-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gardevoir.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gastly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gastrodon-east.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gastrodon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/genesect-burn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/genesect-chill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/genesect-douse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/genesect-shock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/genesect-standard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/genesect.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gengar-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gengar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/geodude-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/geodude.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gible.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gigalith.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/girafarig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/giratina-origin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/giratina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/glaceon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/glalie-mega.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/glalie-mega.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/glalie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/glameow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gligar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gliscor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gloom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gogoat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golbat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/goldeen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golduck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golem-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golett.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golisopod.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/golurk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/goodra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/goomy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gorebyss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gothita.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gothitelle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gothorita.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gourgeist-large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gourgeist-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gourgeist-super.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gourgeist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/granbull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/graveler-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/graveler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/greninja-ash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/greninja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/grimer-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/grimer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/grotle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/groudon-primal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/groudon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/grovyle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/growlithe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/grubbin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/grumpig.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gulpin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gumshoos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gurdurr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/guzzlord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gyarados-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/gyarados.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hakamo-o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/happiny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hariyama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/haunter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hawlucha.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/haxorus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/heatmor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/heatran.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/heliolisk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/helioptile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/heracross-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/heracross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/herdier.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hippopotas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hippowdon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hitmonchan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hitmonlee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hitmontop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ho-oh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/honchkrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/honedge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hoopa-unbound.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hoopa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hoothoot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hoppip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/horsea.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/houndoom-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/houndoom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/houndour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/huntail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hydreigon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/hypno.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/igglybuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/illumise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/incineroar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/infernape.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/inkay.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/inkay.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ivysaur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jangmo-o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jellicent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jigglypuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/jigglypuff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jirachi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jolteon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/joltik.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jumpluff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/jynx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kabuto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kabutops.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kadabra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kakuna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kangaskhan-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kangaskhan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/karrablast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kartana.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kecleon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/keldeo-resolute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/keldeo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kingdra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kingler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kirlia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/klang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/klefki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/klink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/klinklang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/koffing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/komala.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kommo-o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/krabby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kricketot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kricketune.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/krokorok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/krookodile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kyogre-primal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kyogre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kyurem-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kyurem-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/kyurem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lairon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lampent.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/landorus-therian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/landorus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lanturn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lapras.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/larvesta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/larvitar.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/larvitar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/latias-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/latias.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/latios-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/latios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/leafeon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/leavanny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ledian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ledyba.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lickilicky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lickitung.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/liepard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lileep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lilligant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lillipup.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/linoone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/litleo.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/litleo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/litten.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/litwick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lombre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lopunny-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lopunny.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lotad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/loudred.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lucario-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lucario.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ludicolo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lugia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lumineon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lunala.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lunatone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lurantis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/luvdisc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/luxio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/luxray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lycanroc-dusk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lycanroc-midnight.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/lycanroc.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/machamp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/machoke.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/machop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magby.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magcargo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magearna-original.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magearna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magikarp.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/magikarp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magmar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magmortar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magnemite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magneton.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/magnezone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/makuhita.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/malamar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mamoswine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/manaphy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mandibuzz.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/manectric-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/manectric.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mankey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mantine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mantyke.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/mantyke.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/maractus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mareanie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mareep.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/marill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/marowak-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/marowak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/marshadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/marshtomp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/masquerain.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mawile-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mawile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/medicham-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/medicham.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meditite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meganium.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meloetta-pirouette.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meloetta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meowstic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meowth-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/meowth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mesprit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/metagross-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/metagross.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/metang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/metapod.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mewtwo-mega-x.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mewtwo-mega-y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mewtwo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mienfoo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mienshao.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mightyena.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/milotic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/miltank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mime-jr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mimikyu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minccino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-indigo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior-yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/minun.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/misdreavus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mismagius.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/moltres.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/monferno.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/monferno.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/morelull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mothim.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mr-mime.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mudbray.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mudkip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/mudsdale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/muk-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/muk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/munchlax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/munna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/murkrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/musharna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/naganadel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/natu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/necrozma-dawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/necrozma-dusk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/necrozma-ultra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/necrozma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nidoking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nidoqueen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nidoran-f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nidoran-m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nidorina.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nidorino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nihilego.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nincada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ninetales-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ninetales.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ninjask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/noctowl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/noibat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/noivern.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/noivern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nosepass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/numel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/nuzleaf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/octillery.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oddish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/omanyte.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/omastar.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/omastar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/onix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oranguru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oricorio-pau.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oricorio-pom-pom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oricorio-sensu.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/oricorio-sensu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oricorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/oshawott.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pachirisu.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pachirisu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/palkia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/palossand.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/palossand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/palpitoad.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/palpitoad.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pancham.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pangoro.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pangoro.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/panpour.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pansage.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pansage.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pansear.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pansear.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/paras.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/paras.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/parasect.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/parasect.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/passimian.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/passimian.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/patrat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pawniard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pelipper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/persian-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/persian.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/persian.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/petilil.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/petilil.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/phanpy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/phantump.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/phantump.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pheromosa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/phione.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/phione.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pichu-spiky-eared.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pichu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pidgeot-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pidgeot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pidgeotto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pidgey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pidove.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pignite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-alola-cap.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pikachu-alola-cap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-belle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-cosplay.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-hoenn-cap.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pikachu-hoenn-cap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-kalos-cap.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pikachu-kalos-cap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-libre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-original-cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-partner-cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-phd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-pop-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-rock-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-sinnoh-cap.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pikachu-sinnoh-cap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu-unova-cap.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pikachu-unova-cap.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikachu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pikipek.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pikipek.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/piloswine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pineco.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pinsir-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pinsir.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pinsir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/piplup.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/piplup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/plusle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/poipole.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/politoed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/poliwag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/poliwhirl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/poliwrath.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/poliwrath.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ponyta.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/ponyta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/poochyena.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/poochyena.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/popplio.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/popplio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/porygon-z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/porygon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/porygon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/porygon2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/primarina.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/primarina.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/primeape.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/primeape.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/prinplup.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/prinplup.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/probopass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/psyduck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pumpkaboo-large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pumpkaboo-small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pumpkaboo-super.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pumpkaboo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pupitar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/purrloin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/purugly.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pyroar.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/pyroar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/pyukumuku.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/quagsire.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/quagsire.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/quilava.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/quilladin.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/quilladin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/qwilfish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/raichu-alola.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/raichu-alola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/raichu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/raikou.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/raikou.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ralts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rampardos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rapidash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/raticate-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/raticate.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/raticate.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rattata-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rattata.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/rattata.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rayquaza-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rayquaza.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/regice.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/regice.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/regigigas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/regirock.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/regirock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/registeel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/relicanth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/remoraid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/reshiram.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/reshiram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/reuniclus.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/reuniclus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rhydon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rhyhorn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rhyperior.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/rhyperior.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ribombee.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/ribombee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/absol-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/absol.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/amoonguss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/barbaracle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/budew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/castform-snowy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/clauncher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/clawitzer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/clefable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/clefairy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/cleffa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/comfey.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/croconaw.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/dartrix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/dhelmise.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/drilbur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/emboar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/excadrill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/furfrou-debutante.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/garbodor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/golett.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/golurk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/greninja-ash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/greninja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/igglybuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/jigglypuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/keldeo-resolute.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/kingler.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/klang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/klefki.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/klink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/klinklang.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/kyurem-black.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/kyurem-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/kyurem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/lilligant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/litwick.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/magmortar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/marshadow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/meloetta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-indigo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-violet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior-yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/minior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/necrozma-dawn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/necrozma-dusk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/necrozma-ultra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/necrozma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/pansear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/pikachu-belle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/pikachu-original-cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/pikachu-partner-cap.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/pikachu-pop-star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/politoed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/poliwhirl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/poliwrath.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/regirock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/roselia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/roserade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/rotom-wash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/sawk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/seviper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/shaymin-sky.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/simisear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/sneasel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/solosis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/stakataka.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/steenee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/sylveon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/teddiursa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/togekiss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/torterra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/tsareena.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-c.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-d.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-g.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-j.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-k.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-l.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-p.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/unown-z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/vanilluxe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/wigglytuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/zangoose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/zygarde-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/zygarde-complete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/right/zygarde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/riolu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rockruff.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/rockruff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/roggenrola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/roselia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/roserade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rotom-fan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rotom-frost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rotom-heat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rotom-mow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rotom-wash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rotom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rowlet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/rufflet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sableye-mega.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sableye-mega.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sableye.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sableye.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/salamence-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/salamence.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/salandit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/salazzle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/samurott.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sandile.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sandile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sandshrew-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sandshrew.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sandslash-alola.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sandslash-alola.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sandslash.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sandslash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sandygast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sawk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sawsbuck-autumn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sawsbuck-summer.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sawsbuck-summer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sawsbuck-winter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sawsbuck.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scatterbug.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sceptile-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sceptile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scizor-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scizor.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/scizor.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scolipede.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scrafty.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/scrafty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scraggy.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/scraggy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/scyther.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/scyther.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/seadra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/seaking.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/seaking.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sealeo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/seedot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/seel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/seismitoad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sentret.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/serperior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/servine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/seviper.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/seviper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sewaddle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sharpedo-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sharpedo.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sharpedo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shaymin-sky.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/shaymin-sky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shaymin.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/shaymin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shedinja.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shelgon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shellder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shellos-east.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/shellos-east.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shellos.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/shellos.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shelmet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shieldon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shiftry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shiinotic.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/shiinotic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shinx.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shroomish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shuckle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/shuppet.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/shuppet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sigilyph.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sigilyph.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silcoon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/silcoon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-bug.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/silvally-bug.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-dragon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-electric.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-fairy.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/silvally-fairy.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-fighting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-fire.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-flying.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-ghost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-grass.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-ice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-poison.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/silvally-poison.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-psychic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-steel.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/silvally-steel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally-water.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/silvally.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/simipour.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/simipour.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/simisage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/simisear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skarmory.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skiddo.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/skiddo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skiploom.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/skiploom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skitty.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/skitty.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skorupi.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/skorupi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skrelp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/skuntank.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slaking.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slakoth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sliggoo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slowbro-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slowbro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slowking.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/slowking.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slowpoke.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/slowpoke.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slugma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/slurpuff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/smeargle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/smoochum.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/smoochum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sneasel.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sneasel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/snivy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/snorlax.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/snorunt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/snover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/snubbull.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/snubbull.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/solgaleo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/solosis.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/solrock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spearow.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/spearow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spewpa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spheal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spinarak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spinda.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spiritomb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spoink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/spritzee.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/spritzee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/squirtle.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/squirtle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/stakataka.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/stakataka.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/stantler.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/stantler.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/staraptor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/staravia.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/starly.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/starly.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/starmie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/staryu.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/staryu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/steelix-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/steelix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/steenee.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/stoutland.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/stoutland.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/stufful.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/stunfisk.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/stunky.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/stunky.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sudowoodo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/suicune.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/suicune.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sunflora.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sunkern.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sunkern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/surskit.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/surskit.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swablu.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/swablu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swadloon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/swadloon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swalot.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/swalot.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swampert-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swampert.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swanna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swinub.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swirlix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/swoobat.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/swoobat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/sylveon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/sylveon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/taillow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/talonflame.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tangela.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tangrowth.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tangrowth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tapu-bulu.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tapu-bulu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tapu-fini.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tapu-fini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tapu-koko.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tapu-koko.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tapu-lele.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tapu-lele.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tauros.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/teddiursa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tentacool.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tentacruel.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tentacruel.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tepig.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tepig.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/terrakion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/throh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/thundurus-therian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/thundurus.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/thundurus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/timburr.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tirtouga.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/togedemaru.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/togekiss.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/togepi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/togetic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/torchic.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/torchic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/torkoal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tornadus-therian.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tornadus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/torracat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/torterra.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/torterra.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/totodile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/toucannon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/toxapex.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/toxicroak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tranquill.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/trapinch.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/treecko.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/trevenant.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/trevenant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tropius.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/trubbish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/trumbeak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tsareena.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/turtonator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/turtwig.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/turtwig.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tympole.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/tympole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tynamo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/type-null.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/typhlosion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tyranitar-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tyranitar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tyrantrum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tyrogue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/tyrunt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/umbreon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/umbreon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unfezant.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unfezant.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-b.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-c.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-c.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-d.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-d.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-e.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-exclamation.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-f.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-g.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-g.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-h.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-h.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-i.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-j.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-j.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-k.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-k.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-l.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-l.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-m.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-n.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-n.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-o.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-o.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-p.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-p.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-q.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-question.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-r.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-t.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-u.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-w.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-x.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/unown-x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-y.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown-z.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/unown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/ursaring.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/ursaring.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/uxie.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vanillish.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vanillite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vanilluxe.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vanilluxe.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vaporeon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vaporeon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/venipede.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/venomoth.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/venonat.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/venonat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/venusaur-mega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/venusaur.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/venusaur.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vespiquen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vibrava.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vibrava.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/victini.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/victini.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/victreebel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vigoroth.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vigoroth.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vikavolt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vileplume.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/virizion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-archipelago.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon-archipelago.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-continental.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-elegant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-fancy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-garden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-high-plains.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-icy-snow.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon-icy-snow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-jungle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-marine.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon-marine.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-modern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-monsoon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-ocean.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-poke-ball.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-polar.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon-polar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-river.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon-river.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-sandstorm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-savanna.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-sun.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon-sun.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon-tundra.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vivillon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vivillon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/volbeat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/volcanion.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/volcanion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/volcarona.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/volcarona.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/voltorb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vullaby.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/vullaby.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vulpix-alola.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/vulpix.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wailmer.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wailmer.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wailord.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/walrein.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wartortle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/watchog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/weavile.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/weavile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/weedle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/weepinbell.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/weezing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/whimsicott.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/whirlipede.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/whiscash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/whismur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wigglytuff.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wigglytuff.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wimpod.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wingull.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wishiwashi-school.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wishiwashi.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wishiwashi.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wobbuffet.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wobbuffet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/woobat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wooper.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wooper.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wormadam-sandy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wormadam-trash.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wormadam-trash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wormadam.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wurmple.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/wurmple.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/wynaut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/xatu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/xerneas-active.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/xerneas-active.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/xerneas.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/xerneas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/xurkitree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/yamask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/yanma.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/yanmega.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/yanmega.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/yungoos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/yveltal.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/yveltal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zangoose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zapdos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zebstrika.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zekrom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zeraora.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/zeraora.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zigzagoon.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/zigzagoon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zoroark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zorua.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zubat.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/zubat.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zweilous.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/zweilous.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zygarde-10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zygarde-complete.png" beforeDir="false" afterPath="$PROJECT_DIR$/server/resources/image/pokemon/zygarde-complete.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/asset/image/pokemon/zygarde.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ColorView/ColorView.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ColorView/ColorView.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/common/Header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/common/Header/Header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/container/MainContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/container/MainContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,70 +1220,100 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js">
+        <entry file="file://$PROJECT_DIR$/src/container/MainContainer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
+            <state relative-caret-position="359">
+              <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="135" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#77#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-766">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="15">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.scss">
+        <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="135">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="329">
+              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#68#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/common/Header/Header.js">
+        <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" selection-start-column="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/container/MainContainer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+            <state relative-caret-position="285">
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
               <folding>
-                <element signature="e#0#50#0" expanded="true" />
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
+        <entry file="file://$PROJECT_DIR$/src/components/common/QueryError/QueryError.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/common/QueryError/QueryError.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/SelectPokemon/SelectPokemon.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/contexts/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -120,6 +1335,11 @@
       <find>ElementCreationOptions</find>
       <find>clearRect</find>
       <find>times</find>
+      <find>type</find>
+      <find>far</find>
+      <find>state</find>
+      <find>king</find>
+      <find>back</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,47 +1348,63 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/babel.config.js" />
-        <option value="$PROJECT_DIR$/server/index.js" />
-        <option value="$PROJECT_DIR$/server/util/common.js" />
-        <option value="$PROJECT_DIR$/server/graphql/schemas/pokemonSchema.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas" />
         <option value="$PROJECT_DIR$/src/components/DotCanvas/index.js" />
         <option value="$PROJECT_DIR$/src/components/ColorPicker/index.js" />
         <option value="$PROJECT_DIR$/src/components/ColorView/ColorView.js" />
         <option value="$PROJECT_DIR$/src/components/ColorView/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/util/common.js" />
-        <option value="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.scss" />
-        <option value="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js" />
         <option value="$PROJECT_DIR$/src/components/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/common/Header/index.js" />
-        <option value="$PROJECT_DIR$/src/components/common/Header/Header.scss" />
-        <option value="$PROJECT_DIR$/src/components/ColorView/ColorView.scss" />
-        <option value="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js" />
         <option value="$PROJECT_DIR$/src/components/common/Drawer/Drawer.js" />
         <option value="$PROJECT_DIR$/src/components/common/DrawerMenu/index.js" />
-        <option value="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/src/index.scss" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js" />
         <option value="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/index.js" />
-        <option value="$PROJECT_DIR$/src/container/MainContainer.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/components/common/Header/Header.js" />
-        <option value="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss" />
         <option value="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.scss" />
+        <option value="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss" />
+        <option value="$PROJECT_DIR$/src/redux/common.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/canvas.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/saga.js" />
+        <option value="$PROJECT_DIR$/src/redux/index.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/server/index.js" />
+        <option value="$PROJECT_DIR$/server/resources/pokemon.json" />
+        <option value="$PROJECT_DIR$/server/util/common.js" />
+        <option value="$PROJECT_DIR$/src/redux/reducers/common.js" />
+        <option value="$PROJECT_DIR$/src/contexts/canvas.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Header/Header.js" />
         <option value="$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Modal/index.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Modal/Moda.scss" />
+        <option value="$PROJECT_DIR$/src/util/modalString.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Modal/Modal.scss" />
+        <option value="$PROJECT_DIR$/server/resources/pokemon-en.json" />
+        <option value="$PROJECT_DIR$/server/resources/pokemon-ko.json" />
+        <option value="$PROJECT_DIR$/src/components/ColorView/ColorView.scss" />
+        <option value="$PROJECT_DIR$/server/graphql/schemas/pokemonSchema.js" />
+        <option value="$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Modal/Modal.js" />
+        <option value="$PROJECT_DIR$/src/components/common/Header/Header.scss" />
+        <option value="$PROJECT_DIR$/src/index.scss" />
+        <option value="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.scss" />
+        <option value="$PROJECT_DIR$/src/contexts/common.js" />
+        <option value="$PROJECT_DIR$/src/components/common/QueryError/QueryError.scss" />
+        <option value="$PROJECT_DIR$/src/components/SelectPokemon/SelectPokemon.js" />
+        <option value="$PROJECT_DIR$/src/components/common/QueryError/QueryError.js" />
+        <option value="$PROJECT_DIR$/src/util/common.js" />
+        <option value="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js" />
+        <option value="$PROJECT_DIR$/src/components/PokemonInfo/PokemonInfo.js" />
+        <option value="$PROJECT_DIR$/src/container/MainContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss" />
+        <option value="$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-13" />
-    <option name="y" value="-15" />
+    <option name="x" value="-2081" />
+    <option name="y" value="177" />
     <option name="width" value="1920" />
     <option name="height" value="780" />
   </component>
@@ -178,6 +1414,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -188,6 +1425,51 @@
             <path>
               <item name="simple" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="graphql" type="462c0819:PsiDirectoryNode" />
+              <item name="schemas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+              <item name="pokemon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,21 +1477,6 @@
               <item name="simple" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="asset" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawsome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawsome" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simple" type="b2602c69:ProjectViewProjectNode" />
@@ -250,31 +1517,21 @@
               <item name="simple" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="DrawerMenu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="DrawerMenuToggler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="Header" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
-              <item name="simple" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="DotCanvas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="PokemonInfo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="SelectPokemon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="simple" type="b2602c69:ProjectViewProjectNode" />
@@ -286,31 +1543,50 @@
               <item name="simple" type="b2602c69:ProjectViewProjectNode" />
               <item name="simple" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="contexts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="redux" type="462c0819:PsiDirectoryNode" />
+              <item name="reducers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="simple" type="b2602c69:ProjectViewProjectNode" />
+              <item name="simple" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="D:/개발/node.js/work/react/pwa-game" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="D:\dev_tool\WebStorm 2019.1.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\nice7\WebstormProjects\simple\src\components\common" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\taein\WebstormProjects\simple\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nice7\WebstormProjects\simple\src\redux" />
+      <recent name="C:\Users\nice7\WebstormProjects\simple\src\components\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,16 +1614,33 @@
       <workItem from="1571275999630" duration="17692000" />
       <workItem from="1571615657210" duration="10667000" />
       <workItem from="1571657006389" duration="11021000" />
-      <workItem from="1571825354860" duration="15194000" />
+      <workItem from="1571825354860" duration="15244000" />
+      <workItem from="1572075765790" duration="4034000" />
+      <workItem from="1572080705434" duration="13487000" />
+      <workItem from="1572100655414" duration="4184000" />
+      <workItem from="1572166645965" duration="6954000" />
+      <workItem from="1572254844004" duration="8554000" />
+      <workItem from="1572263517663" duration="14937000" />
+      <workItem from="1572350604713" duration="13940000" />
+      <workItem from="1572431339731" duration="11432000" />
+      <workItem from="1572515885439" duration="6514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108564000" />
+    <option name="totallyTimeSpent" value="192650000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1928" y="177" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -359,11 +1652,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32939914" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32866043" />
-      <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="GraphQL" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32832617" />
+      <window_info anchor="bottom" id="TypeScript" order="9" weight="0.32939914" />
+      <window_info anchor="bottom" id="GraphQL" order="10" weight="0.32939914" />
       <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.30364805" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -375,218 +1668,93 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-dom/cjs/react-dom.development.js">
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="27742" column="2" selection-start-line="27742" selection-start-column="2" selection-end-line="27742" selection-end-column="2" />
+        <state relative-caret-position="345">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/graphql/type/definition.d.ts">
+    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="179" column="13" selection-start-line="179" selection-start-column="13" selection-end-line="179" selection-end-column="13" />
+        <state relative-caret-position="105">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/babel.config.js">
+    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/request/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express-graphql/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="124" column="12" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/util/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/transparent-bg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/graphql/schemas/pokemonSchema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-350">
-          <caret line="73" column="111" selection-start-line="73" selection-start-column="111" selection-end-line="73" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/4e0ddabfa619bbb5a9a1b60a12bc478b.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/index.build,js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DotCanvas/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="50" selection-start-column="50" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/4e0ddabfa619bbb5a9a1b60a12bc478b.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/605325679a90df9a3111f13ecc370f3a.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="53" selection-start-column="53" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="49" selection-start-column="49" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="3151" column="4" selection-start-line="3151" selection-start-column="4" selection-end-line="3151" selection-end-column="4" />
+        <state relative-caret-position="435">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ColorView/ColorView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
+        <state relative-caret-position="120">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/node_modules/redux-actions/es/createAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        <state relative-caret-position="15">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/util/common.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="199">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.scss">
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="199">
+          <caret line="42" column="9" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        <state relative-caret-position="387">
+          <caret line="42" column="12" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/express.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="71" column="20" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/index.build,js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
           <folding>
-            <element signature="e#0#60#0" expanded="true" />
+            <element signature="e#0#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/Header/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="43" selection-start-column="43" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/Header/Header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorView/ColorView.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="51" selection-start-column="51" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asset/fontawsome/scss/_icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="178" column="76" selection-start-line="178" selection-start-column="76" selection-end-line="178" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/asset/fontawsome/scss/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/node_modules/graphql/type/definition.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
-          <caret line="195" column="29" selection-start-line="195" selection-start-column="24" selection-end-line="195" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <caret line="176" column="2" selection-start-line="176" selection-start-column="2" selection-end-line="176" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -600,89 +1768,276 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/index.js">
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/saga.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="65" selection-start-column="65" selection-end-column="65" />
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js">
+    <entry file="file://$PROJECT_DIR$/server/util/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        <state relative-caret-position="315">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/canvas.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/reducers/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Modal/Moda.scss" />
+    <entry file="file://$PROJECT_DIR$/src/components/common/Header/Header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+    <entry file="file://$PROJECT_DIR$/src/components/common/Modal/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="51" selection-start-line="5" selection-start-column="51" selection-end-line="5" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Modal/Modal.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ColorView/ColorView.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/modalString.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/redux/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/resources/pokemon-ko.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="794" column="8" lean-forward="true" selection-start-line="794" selection-start-column="8" selection-end-line="794" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contexts/canvas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/container/MainContainer.js">
+    <entry file="file://$PROJECT_DIR$/server/graphql/schemas/pokemonSchema.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="92" column="23" lean-forward="true" selection-start-line="92" selection-start-column="23" selection-end-line="92" selection-end-column="23" />
+        <state relative-caret-position="870">
+          <caret line="58" column="49" lean-forward="true" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Header/Header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="19" lean-forward="true" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/resources/pokemon-en.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="34" column="11" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="27" selection-start-line="26" selection-start-column="8" selection-end-line="31" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/Modal/Modal.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
           <folding>
-            <element signature="e#0#50#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/common/QueryError/QueryError.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        <state relative-caret-position="15">
+          <caret line="1" column="10" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/QueryError/QueryError.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/contexts/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SelectPokemon/SelectPokemon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="48" column="1" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/PokemonInfo/PokemonInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="39" column="116" selection-start-line="39" selection-start-column="116" selection-end-line="39" selection-end-column="116" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
+        <state relative-caret-position="285">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/Header/Header.js">
+    <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenu/DrawerMenu.scss">
+    <entry file="file://$PROJECT_DIR$/src/container/MainContainer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-766">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="359">
+          <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="135" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/ColorPicker/ColorPicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="15">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/common/DrawerMenuToggler/DrawerMenuToggler.js">
+    <entry file="file://$PROJECT_DIR$/src/components/DotCanvas/DotCanvas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="329">
+          <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
         </state>
       </provider>
     </entry>

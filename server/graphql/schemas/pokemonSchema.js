@@ -1,6 +1,9 @@
 const Graphql = require('graphql');
 const request = require('request');
-const {pokemonTypes} = require('../../util/common');
+const {pokemonTypes, baseURL} = require('../../util/common');
+
+const engNames = require('../../resources/pokemon-en');
+const korNames = require('../../resources/pokemon-ko.json');
 
 const abilityType = new Graphql.GraphQLObjectType({ //스키마
     name: 'ability',
@@ -33,7 +36,16 @@ const pokemonType = new Graphql.GraphQLObjectType({
     }
 });
 
-
+const pokemonImageType = new Graphql.GraphQLList(
+    new Graphql.GraphQLObjectType({
+       name: 'pokemonItem',
+       fields: {
+           kr_name: {type: Graphql.GraphQLString},
+           en_name: {type: Graphql.GraphQLString},
+           imageURL : {type: Graphql.GraphQLString}
+       }
+   })
+);
 
 
 const queryType = new Graphql.GraphQLObjectType({
@@ -42,11 +54,11 @@ const queryType = new Graphql.GraphQLObjectType({
         pokemon: {
             type: pokemonType,
             args: { //파라미터들
-                id: {type: Graphql.GraphQLInt}
+                name: {type: Graphql.GraphQLString}
             },
-            resolve: async (_,{id},__,___) => {
+            resolve: async (_,{name},__,___) => {
                 const getPokemon = () => new Promise(async (resolve, reject) => {
-                    request(`https://pokeapi.co/api/v2/pokemon/${id}`,(err, field, body) => {
+                    request(`https://pokeapi.co/api/v2/pokemon/${name}`,(err, field, body) => {
                         const result = JSON.parse(body);
 
                         let retVal = {
@@ -123,7 +135,22 @@ const queryType = new Graphql.GraphQLObjectType({
                 return pokemon;
             }
         },
-        
+        pokemonImageList: {
+            type: pokemonImageType,
+            resolve: async () => {
+                const retval = [];
+
+                for(let i = 0; i < engNames.length; i++){
+                    retval.push({
+                        en_name: engNames[i],
+                        kr_name: korNames[i],
+                        imageURL: baseURL + '/pokemon/' + engNames[i].toLowerCase() + '.png'
+                    })
+                }
+
+                return retval;
+            }
+        }
     }
 });
 

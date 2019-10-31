@@ -1,16 +1,20 @@
-import React, {Component, createRef} from 'react';
+import React, {PureComponent, createRef, useContext, Component} from 'react';
+import {useCommonConsumer} from '../contexts/common';
+import CommenUtil from '../util/common';
 import {DrawerMenu} from "../components/common/DrawerMenu";
 import {DotCanvas} from '../components/DotCanvas';
 import {ColorView} from "../components/ColorView";
 import {ColorPicker} from "../components/ColorPicker";
 import img from '../asset/image/pokemon/xerneas.png';
 
-class MainContainer extends Component{
+//const common = useContext(CommonContext);
+
+class MainContainer extends PureComponent{
     constructor(props){
         super(props);
         this.canvasRef = createRef();
         this.backCanvasRef = createRef();
-        this.onclick = this.onclick.bind(this);
+        this.initCanvas = this.initCanvas.bind(this);
     }
 
     state = {
@@ -20,26 +24,35 @@ class MainContainer extends Component{
         imageWidth: 40,
         imageHeight: 30,
         colorPoint: {},
-        colorList: []
+        colorList: [],
+        pokemon: null
     }
+
 
     componentDidMount() {
-
+        this.initCanvas();
     }
 
-    onclick(){
+    initCanvas(){ //포켓몬이미지를 가져온다.
         if(this.state.isImageLoaded) return false;
 
 
         this.image = document.createElement('img');
-        this.image.src = img.toString();
+
+        const {state} = this.props.value;
+
+        this.image.src = state.pokemon && `http://localhost:12000/pokemon/${state.pokemon}.png`;
 
         const that = this;
 
-        that.image.onload = function(){
+        this.image.onload = function(){
+            console.log(that.image.src + ' now loading.')
             let _colorPoint = {};
             let _colorList = [];
             const ctx = that.canvasRef.current.getContext('2d');
+
+            ctx.clearRect(0, 0, that.state.imageWidth, that.state.imageHeight);
+
             ctx.drawImage(that.image, 0, 0, that.state.imageWidth, that.state.imageHeight);
 
             if(that.state.pImage.length == 0){
@@ -67,14 +80,10 @@ class MainContainer extends Component{
                         if(isExistColor === -1) {
                             _colorList.push(code);
                         }
-                        // const pl = _colorPoint[code];
-                        // if(!pl) _colorPoint[code] = [];
-                        // _colorPoint[code].push({x: Math.floor(i / that.state.imageSize), y: i % that.state.imageSize});
                     }
                 }
 
                 ctx.clearRect(0, 0, that.canvasRef.current.width, that.canvasRef.current.height);
-                //ctx.putImageData(data, 0,0);
 
                 that.setState({
                     ...that.state,
@@ -83,7 +92,14 @@ class MainContainer extends Component{
                     colorList:_colorList
                 });
             }
+
+
+            ctx.clearRect(0, 0, that.canvasRef.current.width, that.canvasRef.current.height);
+
+
         }
+
+
 
     }
 
@@ -97,20 +113,44 @@ class MainContainer extends Component{
     }
 
 
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if(prevProps.value.state.pokemon !== this.props.value.state.pokemon){
+            console.log(prevProps.value.state.pokemon , this.props.value.state.pokemon);
+            this.setState({
+                ...this.state,
+                isImageLoaded: false
+            });
+            console.log('main container didupdate init!');
+            this.initCanvas();
+        }
+    }
+
+
 
     render() {
+        const {state} = this.props.value;
+        this.setState({
+            ...this.state,
+            pokemon: state.pokemon
+        });
+        console.log(state.pokemon, )
+        if(!state.pokemon) {
+            console.log('main container render init!');
+
+        }
+        this.initCanvas();
+
         return (
             <div>
-                <button onClick={this.onclick}>ll</button>
-                <DotCanvas canvasRef={this.canvasRef} backCanvasRef={this.backCanvasRef} imageSize={Math.floor(this.state.imageWidth)} colorPoint={this.state.colorPoint} color={this.state.color}/>
+                <DotCanvas canvasRef={this.canvasRef} backCanvasRef={this.backCanvasRef} imageSize={Math.floor(this.state.imageWidth)} colorPoint={this.state.colorPoint} color={this.state.color} pokemon={this.props.value.state.pokemon}/>
                 <div className={"bmenu"}>
                     <ColorView color={this.state.color}/>
                     <ColorPicker colors={this.state.colorList} onChangeColor={this.changeColor}/>
                 </div>
-                <DrawerMenu isDrawerShown={this.props.isDrawerShown} onToggleDrawerMenu={this.props.onToggleDrawerMenu}/>
+                <DrawerMenu/>
             </div>
         )
     }
 }
 
-export default MainContainer;
+export default useCommonConsumer(MainContainer);
